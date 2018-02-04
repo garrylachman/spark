@@ -127,7 +127,7 @@ module.exports = {
     // note: Future release will change the event_id
     // TODO We should not use this constant. We need to implement a mechanism that will allow the user to change the current event from the UI, therefore we can't rely on constant!
     DEFAULT_EVENT_ID: 'MIDBURN2017',
-  
+
     //TODO move this to jsoninfo inside events table
     //TODO also fix event.js method to extract the data
     //currently the method first returns the constants if exists and only if not it will search the DB
@@ -197,6 +197,8 @@ module.exports = {
      */
     CAMP_MEMBER_STATUS: ['approved', 'pending', 'pending_mgr', 'rejected', 'approved_mgr', 'supplier', 'deleted'],
 
-    EVENT_GATE_STATUS: get_enum(gate_status)
+    EVENT_GATE_STATUS: get_enum(gate_status),
+
+    DEFAULT_LANGUAGE: 'he'
 
 };
